@@ -4,8 +4,10 @@ import socket
 import time
 from multiprocessing import Pool
 
+## This script will fitler fake services which send back the same banner.
+
 host = "192.168.56.227"  		# change this
-fake_message = "FUKU"	# change this
+fake_message = "FUKU"			# change this
 s = None
 
 def enum_port(port):
